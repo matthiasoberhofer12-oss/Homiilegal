@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Homii App</title>
 </head>
 <body>
 
 <h1>Privacy Policy</h1>
-<p>Last updated: March 2026</p>
+<p>Last updated: April 2026</p>
 
 <p>This Privacy Policy explains how the Homii app ("we", "our", "us") collects, uses, and protects your personal data when you use our application.</p>
 
@@ -17,7 +19,7 @@
 <ul>
   <li>Email address (required)</li>
   <li>Name / Display Name</li>
-  <liProfile picture (optional)</li>
+  <li>Profile picture (optional)</li>
   <li>Authentication credentials via Firebase Authentication</li>
 </ul>
 
@@ -41,16 +43,25 @@
   <li>Shopping list items</li>
   <li>Notifications (in-app notifications, e.g., task assignments)</li>
   <li>Leaderboard data (points, streaks, XP)</li>
+  <li>Push notification token(s) used to deliver notifications to your device</li>
 </ul>
 
-<h3>1.4 Data Not Collected</h3>
+<h3>1.4 Device Permissions</h3>
+<p>If you grant permission, we may access:</p>
+<ul>
+  <li><strong>Photo Library:</strong> to let you choose a profile picture or upload receipt photos (e.g., a receipt image for expense sharing)</li>
+  <li><strong>Camera:</strong> to let you take a profile picture or receipt photo directly in the app</li>
+  <li><strong>Notifications:</strong> to send reminders and relevant WG updates</li>
+</ul>
+
+<h3>1.5 Data Not Collected</h3>
 <p>We currently do NOT collect:</p>
 <ul>
-  <li>Comments or chat messages</li>
   <li>Location data</li>
   <li>Contacts</li>
   <li>Calendar data</li>
-  <li>Other sensitive documents (except receipts)</li>
+  <li>Health data</li>
+  <li>Advertising identifiers for cross-app tracking</li>
 </ul>
 
 <h2>2. How We Use Your Data</h2>
@@ -58,39 +69,69 @@
 <ul>
   <li>Operate and improve the Homii app</li>
   <li>Manage WG tasks, expenses, and voting</li>
-  <li>Provide in-app notifications</li>
+  <li>Provide in-app and push notifications</li>
   <li>Display leaderboard and app statistics</li>
+  <li>Maintain security, prevent abuse, and troubleshoot issues</li>
 </ul>
 
 <h2>3. Where We Store Your Data</h2>
-<p>All data is stored securely using Google Firebase services:</p>
+<p>All data is stored using Google Firebase services:</p>
 <ul>
-  <li><strong>Firebase Firestore:</strong> Users, WGs, tasks, expenses, votings, shopping lists, notifications</li>
-  <li><strong>Firebase Storage:</strong> Profile pictures and receipt photos</li>
-  <li><strong>Firebase Authentication:</strong> Email/password and OAuth credentials</li>
+  <li><strong>Firebase Firestore:</strong> users, WGs, tasks, expenses, votings, shopping lists, notifications</li>
+  <li><strong>Firebase Storage:</strong> profile pictures and receipt photos</li>
+  <li><strong>Firebase Authentication:</strong> email/password and OAuth credentials</li>
+  <li><strong>Firebase Cloud Functions:</strong> backend workflows (e.g., notification-related processes)</li>
 </ul>
 
 <h2>4. Analytics & Tracking</h2>
-<p>We currently do not use analytics, tracking, or third-party advertising services. Crash reporting is prepared but not active. Apple Tracking Transparency (ATT) is not applicable.</p>
+<p>We do not use third-party advertising SDKs or cross-app tracking for personalized ads.</p>
+<p>Homii may store limited in-app product events locally on your device (e.g., in local app storage) to improve product quality and user experience. These events are not used for personalized advertising.</p>
+<p>Apple App Tracking Transparency (ATT) is currently not used for ad tracking purposes.</p>
 
 <h2>5. Sharing Data</h2>
-<p>We do not sell or share your personal data with third parties, except as required for Firebase services (Google) to provide authentication and storage.</p>
+<p>We do not sell your personal data.</p>
+<p>We share data only with service providers required to operate the app (e.g., Google Firebase) and only to the extent necessary for authentication, storage, notifications, and app functionality.</p>
+<p>We may also disclose data if legally required.</p>
 
-<h2>6. Your Rights</h2>
-<p>You have the right to:</p>
+<h2>6. Legal Bases (EEA/UK)</h2>
+<p>If you are located in the EEA/UK, we process personal data under:</p>
 <ul>
-  <li>Access, correct, or delete your personal data</li>
-  <li>Withdraw consent for data collection where applicable</li>
-  <li>Contact us regarding privacy concerns</li>
+  <li><strong>Art. 6(1)(b) GDPR (contract performance):</strong> account, WG features, tasks, expenses, voting, synchronization</li>
+  <li><strong>Art. 6(1)(a) GDPR (consent):</strong> camera/photo access, push notifications</li>
+  <li><strong>Art. 6(1)(f) GDPR (legitimate interests):</strong> app security, fraud prevention, reliability, and service improvement</li>
 </ul>
 
-<h2>7. Contact</h2>
+<h2>7. Data Retention</h2>
+<p>We retain personal data for as long as your account is active.</p>
+<p>If you delete your account, we delete or anonymize personal data unless legal retention obligations apply. Technical backups and logs may remain for a limited period before automatic deletion.</p>
+
+<h2>8. International Transfers</h2>
+<p>Our service providers (including Google Firebase) may process data outside your country.</p>
+<p>Where required, we rely on appropriate safeguards such as Standard Contractual Clauses.</p>
+
+<h2>9. Your Rights</h2>
+<p>Depending on applicable law, you may request:</p>
+<ul>
+  <li>Access to your personal data</li>
+  <li>Correction of inaccurate data</li>
+  <li>Deletion of your data</li>
+  <li>Restriction of processing</li>
+  <li>Objection to processing</li>
+  <li>Data portability</li>
+  <li>Withdrawal of consent (where processing is based on consent)</li>
+</ul>
+<p>You may also lodge a complaint with your local data protection authority.</p>
+
+<h2>10. Children</h2>
+<p>Homii is not intended for children under the age of 16 (or the minimum legal age in your jurisdiction). If you believe a child has provided personal data, please contact us so we can take appropriate steps.</p>
+
+<h2>11. Contact</h2>
 <p>If you have questions about this Privacy Policy or your data, contact us at:</p>
 <p><strong>Email:</strong> homii.app.contact@gmail.com</p>
 <p><strong>Address:</strong> Matthias Oberhofer, Egger-Lienz-Straße 116, 6020 Innsbruck, Austria</p>
 
-<h2>8. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will notify users of any significant changes in the app or via the email associated with your account.</p>
+<h2>12. Changes to This Privacy Policy</h2>
+<p>We may update this Privacy Policy from time to time. We will publish updates on this page and update the "Last updated" date.</p>
 
 </body>
 </html>
