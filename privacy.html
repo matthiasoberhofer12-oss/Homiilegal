@@ -19,8 +19,12 @@
     h2 { font-size: 1.15rem; margin: 28px 0 6px; }
     .updated { color: #6b7280; font-size: 0.9rem; margin: 0 0 24px; }
     p { margin: 0 0 12px; }
-    a { color: #2563eb; }
-    footer { margin-top: 40px; color: #9ca3af; font-size: 0.8rem; }
+    ul { margin: 0 0 16px 20px; padding: 0; }
+    li { margin-bottom: 6px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .box { background: #f3f4f6; border-left: 4px solid #2563eb; padding: 12px 16px; margin: 16px 0; border-radius: 0 4px 4px 0; }
+    footer { margin-top: 40px; color: #9ca3af; font-size: 0.8rem; border-top: 1px solid #e5e7eb; padding-top: 16px; }
   </style>
 </head>
 <body>
@@ -28,48 +32,149 @@
     <h1>Datenschutzerklärung</h1>
     <p class="updated">Stand: 04.09.2026</p>
 
-    <p>Wir freuen uns über dein Interesse an unserer App Homii. Der Schutz deiner Privatsphäre ist für uns sehr wichtig. Nachstehend informieren wir dich ausführlich über den Umgang mit deinen Daten.</p>
+    <p>
+      Der Schutz deiner personenbezogenen Daten ist uns wichtig. Nachstehend informieren wir dich
+      gemäß der Datenschutz-Grundverordnung (DSGVO) über Art, Umfang und Zweck der Verarbeitung
+      deiner Daten in der App „Homii".
+    </p>
 
     <h2>1. Verantwortlicher</h2>
     <p>
-      Verantwortlicher für die Datenverarbeitung ist:<br />
       Matthias Oberhofer<br />
-      c/o Inncubator<br />
-      Egger-Lienz-Straße 116<br />
-      6020 Innsbruck<br />
-      Österreich<br />
+      c/o Inncubator, Egger-Lienz-Straße 116, 6020 Innsbruck, Österreich<br />
       E-Mail: <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>
     </p>
 
-    <h2>2. Hosting &amp; technische Bereitstellung (Firebase)</h2>
-    <p>Für Betrieb und Bereitstellung der App nutzen wir Firebase, einen Dienst der Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Firebase umfasst bei uns Authentifizierung, Datenbank, Datei-Speicher, Server-Funktionen und den Versand von Push-Benachrichtigungen. Bei der Nutzung der App werden technische Daten (z.&nbsp;B. IP-Adresse, Geräte-ID, Zugriffszeit) verarbeitet, um Sicherheit und Stabilität des Dienstes zu gewährleisten. Dabei kann eine Verarbeitung auf Servern in den USA erfolgen; als Grundlage dienen die EU-Standardvertragsklauseln.</p>
+    <h2>2. Hosting und technische Bereitstellung (Firebase)</h2>
+    <p>
+      Für Betrieb und Bereitstellung der App nutzen wir Firebase, einen Dienst der Google Ireland
+      Limited (Gordon House, Barrow Street, Dublin 4, Irland). Firebase umfasst bei uns:
+    </p>
+    <ul>
+      <li>Firebase Authentication (Registrierung und Anmeldung)</li>
+      <li>Cloud Firestore (Datenbank für Aufgaben, Ausgaben, WG-Daten und Einkaufslisten)</li>
+      <li>Firebase Storage (Ablage hochgeladener Bilder)</li>
+      <li>Cloud Functions (serverseitige Funktionen)</li>
+      <li>Firebase Cloud Messaging (Versand von Push-Benachrichtigungen)</li>
+    </ul>
+    <p>
+      Dabei werden technische Daten (z. B. IP-Adresse, Geräte-ID, Zugriffszeit) verarbeitet, um
+      Sicherheit und Stabilität des Dienstes zu gewährleisten. Eine Verarbeitung kann auf Servern in
+      den USA erfolgen; als Grundlage dienen die Standardvertragsklauseln der EU-Kommission sowie –
+      soweit für den Empfänger anwendbar – der Angemessenheitsbeschluss zum EU-US Data Privacy
+      Framework. Rechtsgrundlage sind die Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) und unser
+      berechtigtes Interesse an einem sicheren, stabilen Betrieb (Art. 6 Abs. 1 lit. f DSGVO).
+    </p>
 
-    <h2>3. Datenerhebung bei Registrierung</h2>
-    <p>Wenn du einen Account erstellst, speichern wir deine E-Mail-Adresse, deinen gewählten Nutzernamen und (optional) dein Profilbild. Diese Daten sind notwendig, um den Dienst bereitzustellen.</p>
+    <h2>3. Registrierung und Anmeldung</h2>
+    <p>Für die Nutzung ist ein Nutzerkonto erforderlich. Die Anmeldung ist auf folgende Arten möglich:</p>
+    <ul>
+      <li><strong>E-Mail und Passwort:</strong> Wir speichern deine E-Mail-Adresse und deinen gewählten Nutzernamen; das Passwort wird ausschließlich verschlüsselt bei Firebase Authentication hinterlegt.</li>
+      <li><strong>Anmeldung mit Apple:</strong> Anbieter ist die Apple Inc. bzw. Apple Distribution International Ltd. (Irland). Wir erhalten eine eindeutige Nutzerkennung und deine E-Mail-Adresse bzw. – wenn du dies wählst – eine von Apple anonymisierte Weiterleitungsadresse.</li>
+      <li><strong>Anmeldung mit Google:</strong> Anbieter ist die Google Ireland Limited. Wir erhalten deine E-Mail-Adresse, deinen Namen und ggf. dein Google-Profilbild.</li>
+    </ul>
+    <p>Optional kannst du ein Profilbild hinterlegen. Rechtsgrundlage ist die Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</p>
 
-    <h2>4. Nutzung der App-Funktionen &amp; Inhalte</h2>
-    <p>Daten, die du in der App eingibst (Aufgaben, Ausgaben, WG-Informationen), werden in unserer Datenbank gespeichert, um die Synchronisation mit deinen WG-Mitgliedern zu ermöglichen. Wenn du Bilder hochlädst – etwa ein Profilbild oder Belege/Kassenbons zu Ausgaben – werden diese in unserem Datei-Speicher (Firebase Storage) abgelegt und deiner WG bzw. deinem Account zugeordnet.</p>
+    <h2>4. App-Inhalte sowie Kamera- und Fotozugriff</h2>
+    <p>
+      Daten, die du in der App eingibst (Aufgaben, Ausgaben, WG-Informationen, Einkaufslisten),
+      werden gespeichert, um die Synchronisation mit deinen WG-Mitgliedern zu ermöglichen. Wenn du
+      Bilder hinzufügst – etwa ein Profilbild oder Belege bzw. Kassenbons zu Ausgaben – greift die
+      App nach deiner ausdrücklichen Freigabe auf deine Kamera oder deine Medienbibliothek zu. Diese
+      Bilder werden in Firebase Storage abgelegt und deiner WG bzw. deinem Konto zugeordnet.
+      Rechtsgrundlage ist die Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO); die Freigabe der
+      Geräteberechtigung beruht auf deiner Einwilligung (Art. 6 Abs. 1 lit. a DSGVO).
+    </p>
 
-    <h2>5. Analyse &amp; Produktverbesserung (PostHog)</h2>
-    <p>Zur Verbesserung und Weiterentwicklung der App verwenden wir PostHog. Der Dienst wird über Server in der EU betrieben (eu.i.posthog.com). Dabei werden Ereignis- und Nutzungsdaten (z.&nbsp;B. aufgerufene Funktionen, Zeitpunkt, Gerät/Plattform) sowie eine Nutzerkennung und deine E-Mail-Adresse verarbeitet, um die Nutzung besser zu verstehen. Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Verbesserung des Dienstes (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).</p>
+    <h2>5. Analyse und Produktverbesserung (PostHog)</h2>
+    <p>
+      Zur Verbesserung und Weiterentwicklung der App verwenden wir PostHog. Der Dienst wird in der
+      EU-Datenregion betrieben (eu.i.posthog.com); Anbieter ist die PostHog, Inc. (USA), weshalb
+      eine Verarbeitung in den USA nicht vollständig ausgeschlossen werden kann. Grundlage für eine
+      solche Übermittlung sind die Standardvertragsklauseln der EU-Kommission. Verarbeitet werden
+      Ereignis- und Nutzungsdaten (z. B. aufgerufene Funktionen, Zeitpunkt, Gerät/Plattform), eine
+      pseudonyme Nutzer- und Geräte-Kennung sowie – bei angemeldeten Nutzern – deine E-Mail-Adresse,
+      um die Nutzung nachvollziehen und Fehler beheben zu können. Rechtsgrundlage ist unser
+      berechtigtes Interesse an einer bedarfsgerechten Verbesserung des Dienstes
+      (Art. 6 Abs. 1 lit. f DSGVO).
+    </p>
+    <div class="box">
+      <strong>Dein Widerspruchsrecht (Opt-out):</strong> Du kannst der Analyse deiner Nutzungsdaten
+      jederzeit mit Wirkung für die Zukunft widersprechen (Art. 21 DSGVO). Sende dazu eine formlose
+      Nachricht an <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>.
+    </div>
 
     <h2>6. Push-Benachrichtigungen</h2>
-    <p>Wenn du Push-Benachrichtigungen zulässt, speichern wir eine gerätebezogene Push-Kennung (Push-Token), um dir Erinnerungen und Hinweise (z.&nbsp;B. zu Aufgaben) zu senden. Du kannst Push-Benachrichtigungen jederzeit in den Systemeinstellungen deines Geräts deaktivieren.</p>
+    <p>
+      Wenn du Push-Benachrichtigungen zulässt, speichern wir eine gerätebezogene Push-Kennung
+      (Push-Token), um dir Erinnerungen und Hinweise (z. B. zu Aufgaben) über Firebase Cloud
+      Messaging bzw. den Apple Push Notification Service zu senden. Rechtsgrundlage ist deine
+      Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Du kannst Push-Benachrichtigungen jederzeit in den
+      System- oder App-Einstellungen deaktivieren.
+    </p>
 
-    <h2>7. Käufe &amp; Abonnements</h2>
-    <p>Für die Verwaltung unserer In-App-Käufe und Abonnements nutzen wir RevenueCat (RevenueCat, Inc., 1250 4th St, San Francisco, CA 94107, USA). Dabei werden Transaktions- und Abonnementdaten (z.&nbsp;B. Kaufdatum, Belegnummer, Abonnementstatus) sowie eine pseudonyme Nutzerkennung an RevenueCat übertragen, um deinen Premium-Status geräteübergreifend zu verifizieren. Die eigentliche Zahlungsabwicklung erfolgt über den Apple App Store (iOS) bzw. Google Play Store (Android); wir erhalten dabei keine vollständigen Zahlungsdaten. Für die Übermittlung in die USA dienen die EU-Standardvertragsklauseln als Grundlage.</p>
+    <h2>7. Käufe und Abonnements (RevenueCat)</h2>
+    <p>
+      Für die Verwaltung unserer In-App-Käufe und Abonnements nutzen wir RevenueCat (RevenueCat,
+      Inc., 1250 4th St, San Francisco, CA 94107, USA). Dabei werden Transaktions- und
+      Abonnementdaten (z. B. Kaufdatum, Belegnummer, Abonnementstatus) sowie eine pseudonyme
+      Nutzerkennung an RevenueCat übertragen, um deinen Premium-Status geräteübergreifend zu
+      verifizieren. Die eigentliche Zahlungsabwicklung erfolgt über den Apple App Store (iOS) bzw.
+      Google Play Store (Android); wir erhalten keine vollständigen Zahlungsdaten. Für die
+      Übermittlung in die USA dienen die Standardvertragsklauseln der EU-Kommission als Grundlage.
+      Rechtsgrundlage ist die Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).
+    </p>
 
-    <h2>8. Rechtsgrundlagen der Verarbeitung</h2>
-    <p>Wir verarbeiten deine Daten auf folgenden Grundlagen: zur Erfüllung unseres Vertrags mit dir bzw. zur Bereitstellung der App und Abwicklung von Käufen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO), auf Basis unseres berechtigten Interesses an Sicherheit, Stabilität und Verbesserung des Dienstes (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO) sowie – soweit erforderlich – auf Grundlage deiner Einwilligung, etwa bei Push-Benachrichtigungen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO).</p>
+    <h2>8. Nutzung durch Minderjährige</h2>
+    <p>
+      Die App richtet sich an die Allgemeinheit und ist nicht gezielt auf Kinder ausgerichtet.
+      Minderjährige dürfen die App nur mit Zustimmung ihrer Erziehungsberechtigten nutzen;
+      kostenpflichtige Abonnements dürfen sie nur mit deren Einwilligung abschließen. Beruht eine
+      Verarbeitung auf einer Einwilligung und hat der Nutzer das nach nationalem Recht maßgebliche
+      Alter (in Österreich 14 Jahre) noch nicht erreicht, ist die Einwilligung der
+      Erziehungsberechtigten erforderlich (Art. 8 DSGVO). Erlangen wir Kenntnis davon, dass Daten
+      ohne die erforderliche Zustimmung verarbeitet wurden, löschen wir diese.
+    </p>
 
-    <h2>9. Speicherdauer</h2>
-    <p>Wir speichern deine Daten, solange dein Account besteht. Löschst du deinen Account, werden deine personenbezogenen Daten gelöscht oder anonymisiert, soweit keine gesetzlichen Aufbewahrungspflichten (z.&nbsp;B. steuer- oder handelsrechtlich für Abrechnungsdaten) entgegenstehen. In Sicherungskopien können Daten zeitversetzt noch für einen begrenzten Zeitraum enthalten sein.</p>
+    <h2>9. Empfänger und Auftragsverarbeiter</h2>
+    <p>
+      Personenbezogene Daten geben wir nur an die oben genannten Dienstleister (Google/Firebase,
+      PostHog, RevenueCat, Apple, Google) weiter, die als Auftragsverarbeiter für uns tätig sind. Mit
+      diesen bestehen Auftragsverarbeitungsverträge nach Art. 28 DSGVO. Eine Übermittlung an weitere
+      Dritte erfolgt nur, soweit wir gesetzlich dazu verpflichtet sind.
+    </p>
 
-    <h2>10. Deine Rechte</h2>
-    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie das Recht, der Verarbeitung zu widersprechen. Du kannst deinen Account jederzeit in den Einstellungen löschen. Zudem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren – in Österreich bei der Österreichischen Datenschutzbehörde (Barichgasse 40–42, 1030 Wien, <a href="https://www.dsb.gv.at">www.dsb.gv.at</a>).</p>
+    <h2>10. Speicherdauer und Kontolöschung</h2>
+    <p>
+      Wir speichern deine Daten, solange dein Konto besteht. Du kannst dein Konto jederzeit in den
+      App-Einstellungen löschen; dabei werden deine personenbezogenen Daten gelöscht oder
+      anonymisiert, soweit keine gesetzlichen Aufbewahrungspflichten (z. B. steuer- oder
+      handelsrechtlich für Abrechnungsdaten) entgegenstehen. In Sicherungskopien können Daten
+      zeitversetzt noch für einen begrenzten Zeitraum enthalten sein.
+    </p>
 
-    <h2>11. Kontakt</h2>
-    <p>Bei Fragen zum Datenschutz wende dich bitte an <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>.</p>
+    <h2>11. Deine Rechte</h2>
+    <p>Dir stehen bezüglich deiner Daten folgende Rechte zu:</p>
+    <ul>
+      <li>Auskunft (Art. 15 DSGVO)</li>
+      <li>Berichtigung (Art. 16 DSGVO)</li>
+      <li>Löschung (Art. 17 DSGVO)</li>
+      <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+      <li>Widerspruch gegen Verarbeitungen auf Basis berechtigter Interessen (Art. 21 DSGVO)</li>
+      <li>Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+    </ul>
+    <p>
+      Zudem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren. In Österreich ist dies
+      die Österreichische Datenschutzbehörde (Barichgasse 40–42, 1030 Wien,
+      <a href="https://www.dsb.gv.at" target="_blank" rel="noopener">www.dsb.gv.at</a>).
+    </p>
+
+    <h2>12. Kontakt</h2>
+    <p>
+      Bei Fragen zum Datenschutz wende dich bitte an
+      <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>.
+    </p>
 
     <footer>Homii · Datenschutzerklärung</footer>
   </main>
