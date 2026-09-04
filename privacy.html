@@ -1,137 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - Homii App</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Datenschutzerklärung – Homii</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 6px; }
+    .updated { color: #6b7280; font-size: 0.9rem; margin: 0 0 24px; }
+    p { margin: 0 0 12px; }
+    a { color: #2563eb; }
+    footer { margin-top: 40px; color: #9ca3af; font-size: 0.8rem; }
+  </style>
 </head>
 <body>
+  <main>
+    <h1>Datenschutzerklärung</h1>
+    <p class="updated">Stand: 04.09.2026</p>
 
-<h1>Privacy Policy</h1>
-<p>Last updated: April 2026</p>
+    <p>Wir freuen uns über dein Interesse an unserer App Homii. Der Schutz deiner Privatsphäre ist für uns sehr wichtig. Nachstehend informieren wir dich ausführlich über den Umgang mit deinen Daten.</p>
 
-<p>This Privacy Policy explains how the Homii app collects, uses, and protects your personal data when you use our application.</p>
+    <h2>1. Verantwortlicher</h2>
+    <p>
+      Verantwortlicher für die Datenverarbeitung ist:<br />
+      Matthias Oberhofer<br />
+      c/o Inncubator<br />
+      Egger-Lienz-Straße 116<br />
+      6020 Innsbruck<br />
+      Österreich<br />
+      E-Mail: <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>
+    </p>
 
-<h2>1. Information We Collect</h2>
+    <h2>2. Hosting &amp; technische Bereitstellung (Firebase)</h2>
+    <p>Für Betrieb und Bereitstellung der App nutzen wir Firebase, einen Dienst der Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Firebase umfasst bei uns Authentifizierung, Datenbank, Datei-Speicher, Server-Funktionen und den Versand von Push-Benachrichtigungen. Bei der Nutzung der App werden technische Daten (z.&nbsp;B. IP-Adresse, Geräte-ID, Zugriffszeit) verarbeitet, um Sicherheit und Stabilität des Dienstes zu gewährleisten. Dabei kann eine Verarbeitung auf Servern in den USA erfolgen; als Grundlage dienen die EU-Standardvertragsklauseln.</p>
 
-<h3>1.1 Account Information</h3>
-<p>When you create an account, we collect:</p>
-<ul>
-  <li>Email address (required)</li>
-  <li>Name / Display Name</li>
-  <li>Profile picture (optional)</li>
-  <li>Authentication credentials via Firebase Authentication</li>
-</ul>
+    <h2>3. Datenerhebung bei Registrierung</h2>
+    <p>Wenn du einen Account erstellst, speichern wir deine E-Mail-Adresse, deinen gewählten Nutzernamen und (optional) dein Profilbild. Diese Daten sind notwendig, um den Dienst bereitzustellen.</p>
 
-<h3>1.2 Login Methods</h3>
-<p>You can sign in using:</p>
-<ul>
-  <li>Email and password</li>
-  <li>Google Login (via Firebase Authentication)</li>
-  <li>Apple Login (via Firebase Authentication)</li>
-</ul>
-<p>For Google and Apple Login, Firebase securely handles authentication, and we receive your email and name as provided by the service.</p>
+    <h2>4. Nutzung der App-Funktionen &amp; Inhalte</h2>
+    <p>Daten, die du in der App eingibst (Aufgaben, Ausgaben, WG-Informationen), werden in unserer Datenbank gespeichert, um die Synchronisation mit deinen WG-Mitgliedern zu ermöglichen. Wenn du Bilder hochlädst – etwa ein Profilbild oder Belege/Kassenbons zu Ausgaben – werden diese in unserem Datei-Speicher (Firebase Storage) abgelegt und deiner WG bzw. deinem Account zugeordnet.</p>
 
-<h3>1.3 App Data</h3>
-<p>We collect data related to your use of the app:</p>
-<ul>
-  <li>WG membership (wgId)</li>
-  <li>Tasks (title, description, due date)</li>
-  <li>Expenses (amount, title, category)</li>
-  <li>Receipt photos (Premium feature, stored in Firebase Storage)</li>
-  <li>Votes / Voting data</li>
-  <li>Shopping list items</li>
-  <li>Notifications (in-app notifications, e.g., task assignments)</li>
-  <li>Leaderboard data (points, streaks, XP)</li>
-  <li>Push notification token(s) used to deliver notifications to your device</li>
-</ul>
+    <h2>5. Analyse &amp; Produktverbesserung (PostHog)</h2>
+    <p>Zur Verbesserung und Weiterentwicklung der App verwenden wir PostHog. Der Dienst wird über Server in der EU betrieben (eu.i.posthog.com). Dabei werden Ereignis- und Nutzungsdaten (z.&nbsp;B. aufgerufene Funktionen, Zeitpunkt, Gerät/Plattform) sowie eine Nutzerkennung und deine E-Mail-Adresse verarbeitet, um die Nutzung besser zu verstehen. Rechtsgrundlage ist unser berechtigtes Interesse an einer bedarfsgerechten Verbesserung des Dienstes (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO).</p>
 
-<h3>1.4 Device Permissions</h3>
-<p>If you grant permission, we may access:</p>
-<ul>
-  <li><strong>Photo Library:</strong> to let you choose a profile picture or upload receipt photos (e.g., a receipt image for expense sharing)</li>
-  <li><strong>Camera:</strong> to let you take a profile picture or receipt photo directly in the app</li>
-  <li><strong>Notifications:</strong> to send reminders and relevant WG updates</li>
-</ul>
+    <h2>6. Push-Benachrichtigungen</h2>
+    <p>Wenn du Push-Benachrichtigungen zulässt, speichern wir eine gerätebezogene Push-Kennung (Push-Token), um dir Erinnerungen und Hinweise (z.&nbsp;B. zu Aufgaben) zu senden. Du kannst Push-Benachrichtigungen jederzeit in den Systemeinstellungen deines Geräts deaktivieren.</p>
 
-<h3>1.5 Data Not Collected</h3>
-<p>We currently do NOT collect:</p>
-<ul>
-  <li>Location data</li>
-  <li>Contacts</li>
-  <li>Calendar data</li>
-  <li>Health data</li>
-  <li>Advertising identifiers for cross-app tracking</li>
-</ul>
+    <h2>7. Käufe &amp; Abonnements</h2>
+    <p>Für die Verwaltung unserer In-App-Käufe und Abonnements nutzen wir RevenueCat (RevenueCat, Inc., 1250 4th St, San Francisco, CA 94107, USA). Dabei werden Transaktions- und Abonnementdaten (z.&nbsp;B. Kaufdatum, Belegnummer, Abonnementstatus) sowie eine pseudonyme Nutzerkennung an RevenueCat übertragen, um deinen Premium-Status geräteübergreifend zu verifizieren. Die eigentliche Zahlungsabwicklung erfolgt über den Apple App Store (iOS) bzw. Google Play Store (Android); wir erhalten dabei keine vollständigen Zahlungsdaten. Für die Übermittlung in die USA dienen die EU-Standardvertragsklauseln als Grundlage.</p>
 
-<h2>2. How We Use Your Data</h2>
-<p>We use your data to:</p>
-<ul>
-  <li>Operate and improve the Homii app</li>
-  <li>Manage WG tasks, expenses, and voting</li>
-  <li>Provide in-app and push notifications</li>
-  <li>Display leaderboard and app statistics</li>
-  <li>Maintain security, prevent abuse, and troubleshoot issues</li>
-</ul>
+    <h2>8. Rechtsgrundlagen der Verarbeitung</h2>
+    <p>Wir verarbeiten deine Daten auf folgenden Grundlagen: zur Erfüllung unseres Vertrags mit dir bzw. zur Bereitstellung der App und Abwicklung von Käufen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO), auf Basis unseres berechtigten Interesses an Sicherheit, Stabilität und Verbesserung des Dienstes (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO) sowie – soweit erforderlich – auf Grundlage deiner Einwilligung, etwa bei Push-Benachrichtigungen (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a DSGVO).</p>
 
-<h2>3. Where We Store Your Data</h2>
-<p>All data is stored using Google Firebase services:</p>
-<ul>
-  <li><strong>Firebase Firestore:</strong> users, WGs, tasks, expenses, votings, shopping lists, notifications</li>
-  <li><strong>Firebase Storage:</strong> profile pictures and receipt photos</li>
-  <li><strong>Firebase Authentication:</strong> email/password and OAuth credentials</li>
-  <li><strong>Firebase Cloud Functions:</strong> backend workflows (e.g., notification-related processes)</li>
-</ul>
+    <h2>9. Speicherdauer</h2>
+    <p>Wir speichern deine Daten, solange dein Account besteht. Löschst du deinen Account, werden deine personenbezogenen Daten gelöscht oder anonymisiert, soweit keine gesetzlichen Aufbewahrungspflichten (z.&nbsp;B. steuer- oder handelsrechtlich für Abrechnungsdaten) entgegenstehen. In Sicherungskopien können Daten zeitversetzt noch für einen begrenzten Zeitraum enthalten sein.</p>
 
-<h2>4. Analytics & Tracking</h2>
-<p>We do not use third-party advertising SDKs or cross-app tracking for personalized ads.</p>
-<p>Homii may store limited in-app product events locally on your device (e.g., in local app storage) to improve product quality and user experience. These events are not used for personalized advertising.</p>
-<p>Apple App Tracking Transparency (ATT) is currently not used for ad tracking purposes.</p>
+    <h2>10. Deine Rechte</h2>
+    <p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit sowie das Recht, der Verarbeitung zu widersprechen. Du kannst deinen Account jederzeit in den Einstellungen löschen. Zudem hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren – in Österreich bei der Österreichischen Datenschutzbehörde (Barichgasse 40–42, 1030 Wien, <a href="https://www.dsb.gv.at">www.dsb.gv.at</a>).</p>
 
-<h2>5. Sharing Data</h2>
-<p>We do not sell your personal data.</p>
-<p>We share data only with service providers required to operate the app (e.g., Google Firebase) and only to the extent necessary for authentication, storage, notifications, and app functionality.</p>
-<p>We may also disclose data if legally required.</p>
+    <h2>11. Kontakt</h2>
+    <p>Bei Fragen zum Datenschutz wende dich bitte an <a href="mailto:homii.app.contact@gmail.com">homii.app.contact@gmail.com</a>.</p>
 
-<h2>6. Legal Bases (EEA/UK)</h2>
-<p>If you are located in the EEA/UK, we process personal data under:</p>
-<ul>
-  <li><strong>Art. 6(1)(b) GDPR (contract performance):</strong> account, WG features, tasks, expenses, voting, synchronization</li>
-  <li><strong>Art. 6(1)(a) GDPR (consent):</strong> camera/photo access, push notifications</li>
-  <li><strong>Art. 6(1)(f) GDPR (legitimate interests):</strong> app security, fraud prevention, reliability, and service improvement</li>
-</ul>
-
-<h2>7. Data Retention</h2>
-<p>We retain personal data for as long as your account is active.</p>
-<p>If you delete your account, we delete or anonymize personal data unless legal retention obligations apply. Technical backups and logs may remain for a limited period before automatic deletion.</p>
-
-<h2>8. International Transfers</h2>
-<p>Our service providers (including Google Firebase) may process data outside your country.</p>
-<p>Where required, we rely on appropriate safeguards such as Standard Contractual Clauses.</p>
-
-<h2>9. Your Rights</h2>
-<p>Depending on applicable law, you may request:</p>
-<ul>
-  <li>Access to your personal data</li>
-  <li>Correction of inaccurate data</li>
-  <li>Deletion of your data</li>
-  <li>Restriction of processing</li>
-  <li>Objection to processing</li>
-  <li>Data portability</li>
-  <li>Withdrawal of consent (where processing is based on consent)</li>
-</ul>
-<p>You may also lodge a complaint with your local data protection authority.</p>
-
-<h2>10. Children</h2>
-<p>Homii is not intended for children under the age of 16 (or the minimum legal age in your jurisdiction). If you believe a child has provided personal data, please contact us so we can take appropriate steps.</p>
-
-<h2>11. Contact</h2>
-<p>If you have questions about this Privacy Policy or your data, contact us at:</p>
-<p><strong>Email:</strong> homii.app.contact@gmail.com</p>
-<p><strong>Address:</strong> Matthias Oberhofer, Egger-Lienz-Straße 116, 6020 Innsbruck, Austria</p>
-
-<h2>12. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy from time to time. We will publish updates on this page and update the "Last updated" date.</p>
-
+    <footer>Homii · Datenschutzerklärung</footer>
+  </main>
 </body>
 </html>
